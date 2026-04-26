@@ -13,7 +13,7 @@ const modules = [
     icon: Rocket,
     title: "Progetto Custom",
     ideal: "MVP, applicazioni complete, integrazioni complesse",
-    duration: "4-12 settimane",
+    duration: "2-4 settimane",
     output: "Prodotto production-ready + training",
     highlight: true,
   },
@@ -35,10 +35,6 @@ const Pricing = () => {
           <h2 className="section-title mb-5">
             Investimento su misura, <span className="text-gradient">valore garantito</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Ogni progetto è unico. Non lavoriamo a listino: costruiamo preventivi personalizzati
-            basati su complessità, tempi e valore generato per il tuo business.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -49,8 +45,8 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className={`glass-card p-8 relative ${
-                m.highlight ? "border-primary/50 ring-1 ring-primary/30" : ""
+              className={`relative rounded-2xl p-8 bg-white border shadow-lg ${
+                m.highlight ? "border-primary ring-2 ring-primary/40" : "border-black/10"
               }`}
             >
               {m.highlight && (
@@ -58,10 +54,10 @@ const Pricing = () => {
                   Più richiesto
                 </div>
               )}
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 flex items-center justify-center mb-5">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-accent/15 border border-primary/30 flex items-center justify-center mb-5">
                 <m.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">{m.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-neutral-900">{m.title}</h3>
               <div className="space-y-3 text-sm">
                 <Row label="Ideale per" value={m.ideal} />
                 <Row label="Durata" value={m.duration} />
@@ -77,8 +73,8 @@ const Pricing = () => {
 
 const Row = ({ label, value }: { label: string; value: string }) => (
   <div>
-    <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{label}</div>
-    <div className="text-foreground/90">{value}</div>
+    <div className="text-xs uppercase tracking-wider text-neutral-500 mb-1">{label}</div>
+    <div className="text-neutral-800">{value}</div>
   </div>
 );
 
