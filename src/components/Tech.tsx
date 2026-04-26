@@ -29,7 +29,7 @@ const groups = [
 
 const Tech = () => {
   return (
-    <section id="tecnologie" className="py-24 md:py-32 relative">
+    <section id="tecnologie" className="py-16 md:py-24 lg:py-32 relative">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="badge-pill mx-auto mb-6">Stack Tecnologico</div>

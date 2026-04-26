@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section id="contatti" className="py-24 md:py-32 relative overflow-hidden">
+    <section id="contatti" className="py-16 md:py-24 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" style={{ background: "var(--gradient-hero)" }} />
       <div className="absolute inset-0 grid-bg pointer-events-none" />
 

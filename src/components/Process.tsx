@@ -35,7 +35,7 @@ const phases = [
 
 const Process = () => {
   return (
-    <section id="processo" className="py-24 md:py-32 relative">
+    <section id="processo" className="py-16 md:py-24 lg:py-32 relative">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="badge-pill mx-auto mb-6">Come Lavoriamo</div>
