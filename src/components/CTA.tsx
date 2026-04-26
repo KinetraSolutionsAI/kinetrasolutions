@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 const CTA = () => {
   return (
