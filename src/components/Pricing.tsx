@@ -73,8 +73,8 @@ const Pricing = () => {
 
 const Row = ({ label, value }: { label: string; value: string }) => (
   <div>
-    <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{label}</div>
-    <div className="text-foreground/90">{value}</div>
+    <div className="text-xs uppercase tracking-wider text-neutral-500 mb-1">{label}</div>
+    <div className="text-neutral-800">{value}</div>
   </div>
 );
 
