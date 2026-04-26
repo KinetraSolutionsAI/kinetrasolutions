@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import logo from "@/assets/logo-light.png";
+import logo from "@/assets/logo-dark.png";
 
 const Footer = () => {
   return (
