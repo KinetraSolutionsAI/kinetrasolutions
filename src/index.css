@@ -4,55 +4,55 @@
 
 @layer base {
   :root {
-    /* Core palette - deep tech */
-    --background: 222 47% 5%;
-    --foreground: 210 40% 98%;
+    /* Core palette - light & airy */
+    --background: 220 30% 98%;
+    --foreground: 222 47% 11%;
 
-    --card: 222 40% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 222 40% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Cyan electric primary */
-    --primary: 187 95% 55%;
-    --primary-foreground: 222 47% 5%;
-    --primary-glow: 187 100% 70%;
+    /* Indigo primary */
+    --primary: 230 75% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 230 90% 70%;
 
     /* Violet accent */
-    --accent: 263 85% 65%;
-    --accent-foreground: 210 40% 98%;
-    --accent-glow: 280 90% 75%;
+    --accent: 263 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 280 85% 72%;
 
-    --secondary: 222 30% 12%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 25% 94%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 222 30% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 25% 94%;
+    --muted-foreground: 220 15% 40%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 222 30% 15%;
-    --input: 222 30% 15%;
-    --ring: 187 95% 55%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 230 75% 55%;
 
     --radius: 1rem;
 
     /* Gradients */
-    --gradient-hero: radial-gradient(ellipse 80% 60% at 50% 0%, hsl(187 95% 25% / 0.35) 0%, transparent 70%),
-                     radial-gradient(ellipse 60% 50% at 80% 40%, hsl(263 85% 35% / 0.25) 0%, transparent 60%);
-    --gradient-text: linear-gradient(135deg, hsl(187 95% 65%) 0%, hsl(263 85% 70%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(187 95% 55%) 0%, hsl(200 95% 60%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(263 85% 65%) 0%, hsl(290 85% 70%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(222 40% 10% / 0.8) 0%, hsl(222 40% 6% / 0.8) 100%);
-    --gradient-mesh: conic-gradient(from 180deg at 50% 50%, hsl(187 95% 55% / 0.15), hsl(263 85% 65% / 0.15), hsl(187 95% 55% / 0.15));
+    --gradient-hero: radial-gradient(ellipse 80% 60% at 50% 0%, hsl(230 90% 75% / 0.25) 0%, transparent 70%),
+                     radial-gradient(ellipse 60% 50% at 80% 40%, hsl(263 85% 75% / 0.2) 0%, transparent 60%);
+    --gradient-text: linear-gradient(135deg, hsl(230 75% 50%) 0%, hsl(263 80% 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(230 75% 55%) 0%, hsl(245 80% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(263 80% 60%) 0%, hsl(290 80% 65%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9) 0%, hsl(220 30% 98% / 0.9) 100%);
+    --gradient-mesh: conic-gradient(from 180deg at 50% 50%, hsl(230 75% 55% / 0.1), hsl(263 80% 60% / 0.1), hsl(230 75% 55% / 0.1));
 
     /* Shadows */
-    --shadow-glow: 0 0 60px hsl(187 95% 55% / 0.4);
-    --shadow-glow-accent: 0 0 60px hsl(263 85% 65% / 0.4);
-    --shadow-card: 0 20px 60px -20px hsl(222 47% 0% / 0.6);
-    --shadow-elegant: 0 8px 32px hsl(187 95% 55% / 0.15);
+    --shadow-glow: 0 0 60px hsl(230 75% 55% / 0.25);
+    --shadow-glow-accent: 0 0 60px hsl(263 80% 60% / 0.25);
+    --shadow-card: 0 12px 40px -12px hsl(222 47% 30% / 0.12);
+    --shadow-elegant: 0 8px 32px hsl(230 75% 55% / 0.12);
 
     /* Transitions */
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
@@ -72,8 +72,8 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-image:
-      radial-gradient(ellipse 100% 60% at 50% -10%, hsl(187 95% 25% / 0.15) 0%, transparent 60%),
-      radial-gradient(ellipse 80% 50% at 90% 30%, hsl(263 85% 35% / 0.1) 0%, transparent 60%);
+      radial-gradient(ellipse 100% 60% at 50% -10%, hsl(230 90% 75% / 0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 50% at 90% 30%, hsl(263 85% 75% / 0.12) 0%, transparent 60%);
     background-attachment: fixed;
   }
 
@@ -84,7 +84,7 @@
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.3);
+    background: hsl(var(--primary) / 0.2);
     color: hsl(var(--foreground));
   }
 }

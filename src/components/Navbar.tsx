@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo-light.png";
+import logo from "@/assets/logo-dark.png";
 
 const links = [
   { href: "#chi-siamo", label: "Chi Siamo" },
