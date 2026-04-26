@@ -34,7 +34,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       from: 'Kinetra Solutions <info@kinetrasolutions.com>',
       to: ['info@kinetrasolutions.com'],
       subject: `Nuovo Contatto da Landing: ${name}`,
-      reply_to: email,
+      replyTo: email, // Formato camelCase
+      reply_to: email, // Formato snake_case (per sicurezza)
       html: `
         <div style="font-family: sans-serif; padding: 20px; color: #333;">
           <h2 style="color: #000;">Nuovo Messaggio da Kinetra Solutions</h2>
