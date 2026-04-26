@@ -75,6 +75,11 @@
       radial-gradient(ellipse 100% 60% at 50% -10%, hsl(230 90% 75% / 0.18) 0%, transparent 60%),
       radial-gradient(ellipse 80% 50% at 90% 30%, hsl(263 85% 75% / 0.12) 0%, transparent 60%);
     background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4 {
