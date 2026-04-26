@@ -4,25 +4,25 @@ import { Lightbulb, RefreshCw, Rocket } from "lucide-react";
 const modules = [
   {
     icon: Lightbulb,
-    title: "Consulting Sprint",
-    ideal: "Validare idee, POC, roadmap strategica",
+    title: "Analisi e Strategia",
+    ideal: "Fissare gli obiettivi e testare la fattibilità",
     duration: "1-2 settimane",
-    output: "Documento strategico + prototipo",
+    output: "Documento chiaro sulle azioni da compiere + test iniziale",
   },
   {
     icon: Rocket,
-    title: "Progetto Custom",
-    ideal: "MVP, applicazioni complete, integrazioni complesse",
+    title: "Sviluppo su Misura",
+    ideal: "Creazione di vere basi di lavoro, app e siti finiti",
     duration: "2-4 settimane",
-    output: "Prodotto production-ready + training",
+    output: "Software pronto per l'uso + formazione per usarlo",
     highlight: true,
   },
   {
     icon: RefreshCw,
-    title: "Retainer Mensile",
-    ideal: "Supporto continuativo, iterazioni, scaling",
+    title: "Supporto Continuativo",
+    ideal: "Miglioramenti costanti per aziende che fatturano e crescono",
     duration: "Ore dedicate al mese",
-    output: "Priorità su nuove feature + SLA garantito",
+    output: "Lavori prioritari + Garanzia di intervento rapido in caso di blocchi",
   },
 ];
 

@@ -3,33 +3,33 @@ import { motion } from "framer-motion";
 const phases = [
   {
     n: "01",
-    title: "Discovery",
-    text: "Call conoscitiva gratuita, analisi pain point e identificazione opportunità AI.",
-    output: "Documento strategico + preventivo",
+    title: "Scoperta e Analisi",
+    text: "Call conoscitiva gratuita. Capiamo dove perdi tempo e come l'AI o l'informatica possono salvarti.",
+    output: "Piano d'azione strategico e preventivo chiaro",
   },
   {
     n: "02",
-    title: "Progettazione",
-    text: "Wireframe, mockup, architettura tecnica e scelta dello stack tecnologico.",
-    output: "Milestones e timeline condivise",
+    title: "Progettazione e Anteprima",
+    text: "Disegniamo su carta la soluzione. Ti mostriamo in anteprima come funzionerà tutto, zero sorprese.",
+    output: "Tempi esatti e obiettivi condivisi",
   },
   {
     n: "03",
-    title: "Sviluppo Agile",
-    text: "Sprint bi-settimanali con demo iterative e feedback continuo.",
-    output: "Testing in ambiente staging",
+    title: "Sviluppo a Tappe",
+    text: "Lavoriamo per piccoli traguardi. Sviluppiamo e ti teniamo aggiornato costantemente sul nostro lavoro.",
+    output: "Revisioni frequenti durante i lavori",
   },
   {
     n: "04",
-    title: "Deploy & Training",
-    text: "Go-live assistito, formazione team interno e documentazione completa.",
-    output: "Handover trasparente",
+    title: "Consegna e Formazione",
+    text: "Mettiamo tutto online, ma non ti lasciamo solo. Affianchiamo il tuo team per insegnargli a usare tutto.",
+    output: "Passaggio di consegne completo e trasparente",
   },
   {
     n: "05",
-    title: "Manutenzione & Evoluzione",
-    text: "Supporto tecnico dedicato, aggiornamenti e monitoring 24/7.",
-    output: "Iterazioni basate su feedback reali",
+    title: "Assistenza e Crescita",
+    text: "Siamo sempre qui. Controlliamo i sistemi giorno e notte per evitare intoppi e aggiungiamo nuove idee.",
+    output: "Miglioramenti costanti basati sulle tue richieste",
   },
 ];
 
