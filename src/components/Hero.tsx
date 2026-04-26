@@ -1,61 +1,100 @@
-import { ArrowRight, Check, Infinity as InfinityIcon, TrendingUp } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="top" className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 hero-bg pointer-events-none" />
-      <div className="absolute top-1/4 -left-40 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
+    <section
+      id="top"
+      className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden noise-overlay"
+    >
+      {/* Background layers */}
+      <div className="absolute inset-0 grid-bg pointer-events-none" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "var(--gradient-hero)" }}
+      />
 
-      <div className="container mx-auto relative">
+      {/* Floating orbs */}
+      <div className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-primary/20 blur-[120px] animate-pulse-glow pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 rounded-full bg-accent/20 blur-[120px] animate-pulse-glow pointer-events-none" style={{ animationDelay: "1.5s" }} />
+
+      <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="badge-pill mx-auto mb-8">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-muted-foreground">Automazioni AI per Attività Locali</span>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8">
-            <span className="text-gradient">Automatizziamo</span>
-            <br />
-            <span className="text-foreground">i processi della tua</span>
-            <br />
-            <span className="text-foreground">attività con l'AI</span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-            Clienti, appuntamenti, comunicazioni e operazioni automatizzate con soluzioni AI su misura.
-          </p>
-          <p className="text-primary font-medium mb-10">
-            L'AI lavora per te anche quando non sei operativo.
-          </p>
-
-          <a
-            href="mailto:info@kinetrasolutions.com?subject=Prenotazione%20chiamata%20conoscitiva&body=Buongiorno%2C%0A%0Avorrei%20prenotare%20una%20chiamata%20conoscitiva%20gratuita%20per%20scoprire%20le%20vostre%20soluzioni.%0A%0AGrazie."
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold glow-button"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="badge-pill mx-auto mb-8"
           >
-            Prenota una Chiamata Gratuita
-            <ArrowRight className="w-5 h-5" />
-          </a>
-          <p className="text-sm text-muted-foreground mt-4">
-            Chiamata gratuita di 10 minuti – senza impegno
-          </p>
+            <Sparkles className="w-3.5 h-3.5 text-primary" />
+            <span>AI Solutions per il business del futuro</span>
+          </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-3xl mx-auto">
-            <Stat icon={<Check className="w-5 h-5 text-primary" />} value="✓" label="Riduzione" sub="Costi" />
-            <Stat icon={<InfinityIcon className="w-5 h-5 text-primary" />} value="∞" label="Tempo" sub="Liberato" />
-            <Stat icon={null} value="H24" label="Sempre" sub="Attivo" big />
-            <Stat icon={<TrendingUp className="w-5 h-5 text-primary" />} value="+" label="Fatturato" sub="" />
-          </div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.05]"
+          >
+            Trasformiamo la tua azienda con{" "}
+            <span className="text-gradient">l'intelligenza artificiale</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          >
+            Sistemi AI personalizzati, automazioni avanzate e soluzioni digitali su misura per
+            aziende che vogliono competere nel futuro.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
+          >
+            <a href="mailto:info@kinetrasolutions.com?subject=Parliamo%20del%20mio%20progetto" className="btn-primary text-base !px-8 !py-4">
+              Parliamo del tuo progetto
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <a href="#servizi" className="btn-ghost text-base !px-8 !py-4">
+              Scopri i servizi
+            </a>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="text-sm text-muted-foreground"
+          >
+            ⚡ Risposta entro 24 ore · Nessun impegno
+          </motion.p>
+
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto mt-20 pt-12 border-t border-border/50"
+          >
+            <Stat value="50+" label="Aziende servite" />
+            <Stat value="200+" label="Automazioni attive" />
+            <Stat value="10k+" label="Ore risparmiate / mese" />
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-const Stat = ({ value, label, sub, big }: { icon?: React.ReactNode; value: string; label: string; sub: string; big?: boolean }) => (
-  <div className="flex flex-col items-center">
-    <div className={`font-bold text-primary ${big ? "text-3xl" : "text-4xl"}`}>{value}</div>
-    <div className="text-sm font-semibold mt-1">{label}</div>
-    {sub && <div className="text-xs text-muted-foreground">{sub}</div>}
+const Stat = ({ value, label }: { value: string; label: string }) => (
+  <div>
+    <div className="text-3xl md:text-5xl font-bold text-gradient mb-1">{value}</div>
+    <div className="text-xs md:text-sm text-muted-foreground">{label}</div>
   </div>
 );
 
