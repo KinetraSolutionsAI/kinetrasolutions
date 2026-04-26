@@ -17,7 +17,7 @@ export default async function handler(req: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const { data, error } = await resend.emails.send({
-      from: 'Kinetra Solutions <onboarding@resend.dev>', // Ti consiglio di cambiare questo con la tua mail verificata
+      from: 'Kinetra Solutions <info@kinetrasolutions.com>',
       to: ['info@kinetrasolutions.com'],
       subject: `Nuovo Contatto da Landing: ${name}`,
       replyTo: email,
