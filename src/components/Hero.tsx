@@ -27,7 +27,7 @@ const Hero = () => {
             className="badge-pill mx-auto mb-8"
           >
             <Sparkles className="w-3.5 h-3.5 text-primary" />
-            <span>AI Solutions per il business del futuro</span>
+            <span>Analizziamo. Ottimizziamo. Ti facciamo recuperare tempo e denaro.</span>
           </motion.div>
 
           <motion.h1
@@ -36,8 +36,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.05]"
           >
-            Trasformiamo la tua azienda con{" "}
-            <span className="text-gradient">l'intelligenza artificiale</span>
+            Meno tempo perso, <span className="text-gradient">più risultati</span> per la tua azienda
           </motion.h1>
 
           <motion.p
@@ -46,8 +45,9 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Sistemi AI personalizzati, automazioni avanzate e soluzioni digitali su misura per
-            aziende che vogliono competere nel futuro.
+            Studiamo i tuoi flussi di lavoro e ti costruiamo gli strumenti che ti mancano: siti web,
+            app, gestionali, software su misura e segretarie virtuali con AI. Tu lavori meglio, in
+            meno tempo, spendendo meno.
           </motion.p>
 
           <motion.div
