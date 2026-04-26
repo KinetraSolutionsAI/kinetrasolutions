@@ -102,9 +102,7 @@ const Sectors = () => {
             Anche se sei titolare di officina, palestra o qualsiasi altra attività le nostre soluzioni possono fare al caso tuo in quanto sono costruite sul tuo modello di lavoro.
           </p>
           <a
-            href="https://wa.me/393452838679?text=Buongiorno%20%2C%20sarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:info@kinetrasolutions.com?subject=Richiesta%20informazioni&body=Buongiorno%2C%0A%0Asarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0."
             className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold glow-button"
           >
             Contattaci
