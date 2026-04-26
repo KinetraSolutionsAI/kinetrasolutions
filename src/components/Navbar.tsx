@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/logo.png";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo-light.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,9 +17,9 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50">
       <nav className="container mx-auto flex items-center justify-between py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <img src={logo} alt="Kinetra Solutions" className="h-12 w-auto" width={48} height={48} />
-        </a>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Kinetra Solutions" className="h-12 md:h-14 w-auto" />
+        </Link>
 
         <ul className="hidden md:flex items-center gap-8">
           {links.map((l) => (

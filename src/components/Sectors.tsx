@@ -1,4 +1,5 @@
 import { Stethoscope, Scissors, UtensilsCrossed, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const sectors = [
   {
@@ -14,7 +15,7 @@ const sectors = [
       "Gestione dati e report automatizzati",
       "Creazione e invio fatture automatico",
     ],
-    link: "https://www.kinetrasolutions.com/professionisti-salute",
+    link: "/professionisti-salute",
   },
   {
     icon: Scissors,
@@ -28,7 +29,7 @@ const sectors = [
       "Recupero automatico no-show",
       "Gestione storico trattamenti",
     ],
-    link: "https://www.kinetrasolutions.com/parrucchieri-estetica",
+    link: "/parrucchieri-estetica",
   },
   {
     icon: UtensilsCrossed,
@@ -42,7 +43,7 @@ const sectors = [
       "Follow-up e fidelizzazione clienti",
       "Report vendite automatici",
     ],
-    link: "https://www.kinetrasolutions.com/ristorazione",
+    link: "/ristorazione",
   },
 ];
 
@@ -90,9 +91,9 @@ const Sectors = () => {
                 ))}
               </ul>
 
-              <a href={s.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
+              <Link to={s.link} className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
                 Scopri di più <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
