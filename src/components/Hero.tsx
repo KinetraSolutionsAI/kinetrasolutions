@@ -81,8 +81,8 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto mt-20 pt-12 border-t border-border/50"
           >
-            <Stat value="50+" label="Aziende servite" />
-            <Stat value="200+" label="Automazioni attive" />
+            <Stat value="50+" label="Aziende ottimizzate" />
+            <Stat value="200+" label="Processi automatizzati" />
             <Stat value="10k+" label="Ore risparmiate / mese" />
           </motion.div>
         </div>
