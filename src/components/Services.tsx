@@ -1,48 +1,48 @@
 import { motion } from "framer-motion";
-import { Bot, Brain, Cog, Database, Globe, Link2 } from "lucide-react";
+import { Bot, Cog, Database, Globe, Smartphone, Search } from "lucide-react";
 
 const services = [
   {
-    icon: Bot,
-    title: "AI Agents & Chatbot",
-    desc: "Assistenti virtuali personalizzati e agenti autonomi per gestione operativa.",
-    features: ["Customer service automatizzato", "Integrazione CRM esistenti", "NLP italiano e multilingua"],
-    useCase: "Riduci del 70% il carico del supporto clienti",
-  },
-  {
-    icon: Cog,
-    title: "Automazioni & Workflow",
-    desc: "Processi end-to-end automatizzati con trigger intelligenti.",
-    features: ["Zapier, Make, n8n, API custom", "RPA aziendale", "Decision-making automatico"],
-    useCase: "Da 40 ore/mese a 2 ore con un click",
-  },
-  {
-    icon: Database,
-    title: "CRM & Gestione Dati",
-    desc: "CRM su misura, dashboard real-time e analytics predittiva.",
-    features: ["Data pipeline e warehouse", "KPI strategici live", "Reporting automatico"],
-    useCase: "Decisioni data-driven in tempo reale",
+    icon: Search,
+    title: "Analisi dei flussi aziendali",
+    desc: "Studiamo come lavori oggi, individuiamo dove perdi tempo e denaro e ti diciamo esattamente cosa migliorare.",
+    features: ["Mappatura processi attuali", "Stima ore e costi recuperabili", "Piano d'azione concreto"],
+    useCase: "Capisci subito dove stai sprecando risorse",
   },
   {
     icon: Globe,
-    title: "Web & Mobile Apps",
-    desc: "Applicazioni custom React/Next.js, PWA, mobile native e cross-platform.",
-    features: ["E-commerce con AI", "Progressive Web Apps", "iOS & Android"],
-    useCase: "Dal prototipo al deploy in 6 settimane",
+    title: "Siti web professionali",
+    desc: "Siti vetrina, e-commerce e landing page veloci, moderne e pensate per portarti clienti.",
+    features: ["Design su misura", "Ottimizzati per Google", "Pronti a vendere"],
+    useCase: "Una presenza online che lavora per te",
   },
   {
-    icon: Link2,
-    title: "Integrazioni API & Legacy",
-    desc: "Connettiamo i tuoi software, moderniziamo sistemi legacy senza disruption.",
-    features: ["API gateway & microservizi", "Sincronizzazione real-time", "Modernizzazione legacy"],
-    useCase: "ERP + CRM + E-commerce: un ecosistema unico",
+    icon: Smartphone,
+    title: "App mobile su misura",
+    desc: "App per iOS e Android costruite sulle reali esigenze tue e dei tuoi clienti.",
+    features: ["iOS e Android", "Esperienza utente curata", "Notifiche e fidelizzazione"],
+    useCase: "Il tuo servizio sempre nelle tasche dei clienti",
   },
   {
-    icon: Brain,
-    title: "Consulenza Strategica AI",
-    desc: "AI readiness assessment e roadmap tecnologica personalizzata.",
-    features: ["Training interno team", "Proof of concept & MVP", "Strategia a lungo termine"],
-    useCase: "Scopri dove l'AI fa la differenza nel tuo business",
+    icon: Database,
+    title: "Gestionali e software custom",
+    desc: "Gestionali e software interni che sostituiscono fogli Excel, mail e processi manuali con un unico strumento ordinato.",
+    features: ["Sostituisce Excel e file sparsi", "Tutto centralizzato in un posto", "Accessibile da qualsiasi device"],
+    useCase: "Stop al caos: un solo strumento per tutto",
+  },
+  {
+    icon: Bot,
+    title: "Agenti AI e segretarie virtuali",
+    desc: "Assistenti AI che rispondono ai clienti, prendono appuntamenti, gestiscono mail e compiti ripetitivi al posto tuo.",
+    features: ["Risposte automatiche 24/7", "Prenotazioni e promemoria", "Parlano italiano in modo naturale"],
+    useCase: "Come avere una segretaria che non dorme mai",
+  },
+  {
+    icon: Cog,
+    title: "Automazioni intelligenti",
+    desc: "Colleghiamo i tuoi strumenti (mail, CRM, fatture, social) e facciamo lavorare tutto da solo.",
+    features: ["Eliminano lavori ripetitivi", "Riducono errori umani", "Liberano ore ogni settimana"],
+    useCase: "Da 40 ore al mese a 2, con un click",
   },
 ];
 
@@ -51,13 +51,14 @@ const Services = () => {
     <section id="servizi" className="py-24 md:py-32 relative">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="badge-pill mx-auto mb-6">Servizi Core</div>
+          <div className="badge-pill mx-auto mb-6">Cosa Facciamo</div>
           <h2 className="section-title mb-5">
-            Soluzioni AI e digitali <span className="text-gradient">su misura</span>
+            Strumenti su misura per <span className="text-gradient">farti recuperare tempo e denaro</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Sei aree di expertise per portare la tua azienda al livello successivo, con tecnologie
-            scelte sempre in funzione del tuo problema.
+            Analizziamo come lavori oggi e costruiamo gli strumenti che ti servono davvero: siti,
+            app, gestionali, software e assistenti AI. Niente di superfluo, solo ciò che fa la
+            differenza nei tuoi numeri.
           </p>
         </div>
 
