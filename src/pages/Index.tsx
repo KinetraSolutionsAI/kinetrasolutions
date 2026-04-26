@@ -7,6 +7,7 @@ import Process from "@/components/Process";
 import Tech from "@/components/Tech";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ const Index = () => {
         <Tech />
         <Pricing />
         <FAQ />
+        <Contact />
         <CTA />
       </main>
       <Footer />
