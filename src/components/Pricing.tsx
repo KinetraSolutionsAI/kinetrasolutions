@@ -13,7 +13,7 @@ const modules = [
     icon: Rocket,
     title: "Progetto Custom",
     ideal: "MVP, applicazioni complete, integrazioni complesse",
-    duration: "4-12 settimane",
+    duration: "2-4 settimane",
     output: "Prodotto production-ready + training",
     highlight: true,
   },
