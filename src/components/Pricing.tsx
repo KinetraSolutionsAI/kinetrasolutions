@@ -45,7 +45,7 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className={`relative rounded-2xl p-8 bg-white border shadow-lg ${
+              className={`relative rounded-2xl p-6 sm:p-8 bg-white border shadow-lg ${
                 m.highlight ? "border-primary ring-2 ring-primary/40" : "border-black/10"
               }`}
             >
