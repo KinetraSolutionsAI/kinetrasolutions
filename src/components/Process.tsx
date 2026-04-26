@@ -65,15 +65,15 @@ const Process = () => {
                 }`}
               >
                 {/* Number bubble */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute left-5 md:left-1/2 -translate-x-1/2 z-10">
                   <div className="w-4 h-4 rounded-full bg-gradient-to-br from-primary to-accent ring-8 ring-background" />
                 </div>
 
                 {/* Card */}
-                <div className="ml-20 md:ml-0 md:w-1/2 md:px-8">
-                  <div className="glass-card p-7">
+                <div className="ml-14 md:ml-0 md:w-1/2 md:px-8">
+                  <div className="glass-card p-5 sm:p-7">
                     <div className="text-sm font-mono text-primary mb-2">{p.n}</div>
-                    <h3 className="text-2xl font-bold mb-3">{p.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3">{p.title}</h3>
                     <p className="text-muted-foreground mb-4">{p.text}</p>
                     <div className="text-sm font-medium text-foreground/80">
                       <span className="text-muted-foreground">Output: </span>
