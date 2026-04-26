@@ -36,10 +36,6 @@ const Tech = () => {
           <h2 className="section-title mb-5">
             Gli strumenti migliori per <span className="text-gradient">risultati concreti</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Stack agnostic: scegliamo la tecnologia giusta per il <em>tuo</em> problema, non il
-            contrario.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
