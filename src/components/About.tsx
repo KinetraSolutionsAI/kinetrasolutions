@@ -10,7 +10,7 @@ const points = [
 
 const About = () => {
   return (
-    <section id="chi-siamo" className="py-24 md:py-32 relative">
+    <section id="chi-siamo" className="py-16 md:py-24 lg:py-32 relative">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
@@ -24,7 +24,7 @@ const About = () => {
               Un team di esperti al servizio della tua{" "}
               <span className="text-gradient">innovazione</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
               Siamo un collettivo di sviluppatori, data scientist e business strategist con una
               missione chiara: portare l'intelligenza artificiale nel cuore delle operazioni
               aziendali. Da anni aiutiamo imprese italiane e internazionali a implementare
@@ -47,12 +47,12 @@ const About = () => {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="glass-card p-10 lg:p-12 relative overflow-hidden">
+            <div className="glass-card p-7 sm:p-10 lg:p-12 relative overflow-hidden">
               <div className="absolute -top-20 -right-20 w-60 h-60 bg-primary/20 rounded-full blur-3xl" />
               <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-accent/20 rounded-full blur-3xl" />
               <div className="relative">
-                <div className="text-6xl mb-6">"</div>
-                <p className="text-2xl md:text-3xl font-semibold leading-tight mb-6">
+                <div className="text-5xl md:text-6xl mb-4 md:mb-6 leading-none">"</div>
+                <p className="text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-6">
                   Non vendiamo software a scaffale. <br />
                   <span className="text-gradient">Costruiamo il tuo sistema AI da zero.</span>
                 </p>

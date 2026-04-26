@@ -28,9 +28,9 @@ const modules = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-24 md:py-32 relative">
+    <section id="pricing" className="py-16 md:py-24 lg:py-32 relative">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="badge-pill mx-auto mb-6">Modelli di Ingaggio</div>
           <h2 className="section-title mb-5">
             Investimento su misura, <span className="text-gradient">valore garantito</span>
@@ -45,7 +45,7 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className={`relative rounded-2xl p-8 bg-white border shadow-lg ${
+              className={`relative rounded-2xl p-6 sm:p-8 bg-white border shadow-lg ${
                 m.highlight ? "border-primary ring-2 ring-primary/40" : "border-black/10"
               }`}
             >

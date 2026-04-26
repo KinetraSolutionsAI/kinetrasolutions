@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="top"
-      className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden noise-overlay"
+      className="relative min-h-screen flex items-center pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden noise-overlay"
     >
       {/* Background layers */}
       <div className="absolute inset-0 grid-bg pointer-events-none" />
@@ -34,7 +34,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.05]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-6 md:mb-8 leading-[1.05]"
           >
             Meno tempo perso, <span className="text-gradient">più risultati</span> per la tua azienda
           </motion.h1>
@@ -43,7 +43,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed px-2"
           >
             Studiamo i tuoi flussi di lavoro e ti costruiamo gli strumenti che ti mancano: siti web,
             app, gestionali, software su misura e segretarie virtuali con AI. Tu lavori meglio, in
@@ -54,13 +54,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6"
           >
-            <a href="mailto:info@kinetrasolutions.com?subject=Parliamo%20del%20mio%20progetto" className="btn-primary text-base !px-8 !py-4">
+            <a href="mailto:info@kinetrasolutions.com?subject=Parliamo%20del%20mio%20progetto" className="btn-primary text-base !px-6 !py-3.5 sm:!px-8 sm:!py-4 w-full sm:w-auto">
               Parliamo del tuo progetto
               <ArrowRight className="w-5 h-5" />
             </a>
-            <a href="#servizi" className="btn-ghost text-base !px-8 !py-4">
+            <a href="#servizi" className="btn-ghost text-base !px-6 !py-3.5 sm:!px-8 sm:!py-4 w-full sm:w-auto">
               Scopri i servizi
             </a>
           </motion.div>
@@ -79,7 +79,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto mt-20 pt-12 border-t border-border/50"
+            className="grid grid-cols-3 gap-3 md:gap-8 max-w-3xl mx-auto mt-14 md:mt-20 pt-10 md:pt-12 border-t border-border/50"
           >
             <Stat value="50+" label="Aziende ottimizzate" />
             <Stat value="200+" label="Processi automatizzati" />
@@ -93,8 +93,8 @@ const Hero = () => {
 
 const Stat = ({ value, label }: { value: string; label: string }) => (
   <div>
-    <div className="text-3xl md:text-5xl font-bold text-gradient mb-1">{value}</div>
-    <div className="text-xs md:text-sm text-muted-foreground">{label}</div>
+    <div className="text-2xl md:text-5xl font-bold text-gradient mb-1">{value}</div>
+    <div className="text-[11px] md:text-sm text-muted-foreground leading-tight">{label}</div>
   </div>
 );
 
