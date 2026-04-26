@@ -35,10 +35,6 @@ const Pricing = () => {
           <h2 className="section-title mb-5">
             Investimento su misura, <span className="text-gradient">valore garantito</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Ogni progetto è unico. Non lavoriamo a listino: costruiamo preventivi personalizzati
-            basati su complessità, tempi e valore generato per il tuo business.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
