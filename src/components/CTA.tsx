@@ -18,20 +18,16 @@ const CTA = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
-              href="https://calendly.com/kinetrasolutions-proton/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@kinetrasolutions.com?subject=Prenotazione%20chiamata%20conoscitiva&body=Buongiorno%2C%0A%0Avorrei%20prenotare%20una%20chiamata%20conoscitiva%20gratuita%20per%20scoprire%20le%20vostre%20soluzioni.%0A%0AGrazie."
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold glow-button"
             >
               Prenota una Chiamata Gratuita <ArrowRight className="w-5 h-5" />
             </a>
             <a
-              href="https://wa.me/393452838679?text=Buongiorno%20%2C%20sarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@kinetrasolutions.com?subject=Richiesta%20informazioni&body=Buongiorno%2C%0A%0Asarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0."
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-border bg-card font-semibold hover:border-primary transition-colors"
             >
-              <MessageCircle className="w-5 h-5" /> Scrivici su WhatsApp
+              <Mail className="w-5 h-5" /> Contattaci via Email
             </a>
           </div>
 
