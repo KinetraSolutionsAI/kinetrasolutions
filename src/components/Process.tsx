@@ -42,7 +42,7 @@ const Process = () => {
           <h2 className="section-title mb-5">
             Un processo <span className="text-gradient">trasparente</span> in 5 fasi
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Dalla prima call alla manutenzione: metodologia agile, comunicazione costante,
             risultati misurabili.
           </p>
@@ -50,9 +50,9 @@ const Process = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
+          <div className="absolute left-5 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
 
-          <div className="space-y-12">
+          <div className="space-y-8 md:space-y-12">
             {phases.map((p, i) => (
               <motion.div
                 key={p.n}
