@@ -55,7 +55,7 @@ const Services = () => {
           <h2 className="section-title mb-5">
             Strumenti su misura per <span className="text-gradient">farti recuperare tempo e denaro</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Analizziamo come lavori oggi e costruiamo gli strumenti che ti servono davvero: siti,
             app, gestionali, software e assistenti AI. Niente di superfluo, solo ciò che fa la
             differenza nei tuoi numeri.
