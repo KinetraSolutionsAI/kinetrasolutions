@@ -29,9 +29,7 @@ const Hero = () => {
           </p>
 
           <a
-            href="https://calendly.com/kinetrasolutions-proton/30min"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:info@kinetrasolutions.com?subject=Prenotazione%20chiamata%20conoscitiva&body=Buongiorno%2C%0A%0Avorrei%20prenotare%20una%20chiamata%20conoscitiva%20gratuita%20per%20scoprire%20le%20vostre%20soluzioni.%0A%0AGrazie."
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold glow-button"
           >
             Prenota una Chiamata Gratuita
