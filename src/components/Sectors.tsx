@@ -64,26 +64,26 @@ const Sectors = () => {
 
         <div className="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {sectors.map((s) => (
-            <div key={s.title} className="card-elegant p-8 flex flex-col">
+            <div key={s.title} className="card-light p-8 flex flex-col">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
                 <s.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">{s.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-neutral-900">{s.title}</h3>
               <p className="text-primary text-sm font-medium mb-5">{s.tagline}</p>
 
               <div className="mb-4">
-                <p className="text-xs uppercase text-muted-foreground tracking-wider mb-1">Il problema</p>
-                <p className="text-sm text-foreground/80">{s.problem}</p>
+                <p className="text-xs uppercase text-neutral-500 tracking-wider mb-1">Il problema</p>
+                <p className="text-sm text-neutral-700">{s.problem}</p>
               </div>
 
               <div className="mb-5">
                 <p className="text-xs uppercase text-primary tracking-wider mb-1">La soluzione</p>
-                <p className="text-sm text-foreground/80">{s.solution}</p>
+                <p className="text-sm text-neutral-700">{s.solution}</p>
               </div>
 
               <ul className="space-y-2 text-sm mb-6 flex-1">
                 {s.features.map((f) => (
-                  <li key={f} className="flex gap-2 text-muted-foreground">
+                  <li key={f} className="flex gap-2 text-neutral-700">
                     <span className="text-primary">✓</span>
                     <span>{f}</span>
                   </li>
@@ -102,9 +102,7 @@ const Sectors = () => {
             Anche se sei titolare di officina, palestra o qualsiasi altra attività le nostre soluzioni possono fare al caso tuo in quanto sono costruite sul tuo modello di lavoro.
           </p>
           <a
-            href="https://wa.me/393452838679?text=Buongiorno%20%2C%20sarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:info@kinetrasolutions.com?subject=Richiesta%20informazioni&body=Buongiorno%2C%0A%0Asarei%20interessato%20alle%20vostre%20soluzioni%20per%20la%20mia%20attivit%C3%A0."
             className="inline-flex items-center px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold glow-button"
           >
             Contattaci
