@@ -113,7 +113,7 @@ const Contact = () => {
               {/* WhatsApp Button for Desktop/Mobile directly under info */}
               <div className="pt-4">
                 <a 
-                  href="https://wa.me/393278564287?text=Ciao!%20Vorrei%20informazioni%20sulle%20vostre%20soluzioni%20tecnologiche." 
+                  href="https://wa.me/393452838679?text=Salve%20volevo%20chiedere%20informazioni." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-lg shadow-green-500/20"

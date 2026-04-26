@@ -45,7 +45,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <a href="mailto:info@kinetrasolutions.com" className="hidden md:inline-flex btn-primary !py-2.5 !px-5">
+        <a href="#contatti" className="hidden md:inline-flex btn-primary !py-2.5 !px-5">
           Contattaci
         </a>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="mailto:info@kinetrasolutions.com"
+                href="#contatti"
                 onClick={() => setOpen(false)}
                 className="btn-primary !py-2.5 !px-5 w-fit"
               >

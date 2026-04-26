@@ -56,7 +56,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6"
           >
-            <a href="mailto:info@kinetrasolutions.com?subject=Parliamo%20del%20mio%20progetto" className="btn-primary text-base !px-6 !py-3.5 sm:!px-8 sm:!py-4 w-full sm:w-auto">
+            <a href="#contatti" className="btn-primary text-base !px-6 !py-3.5 sm:!px-8 sm:!py-4 w-full sm:w-auto">
               Parliamo del tuo progetto
               <ArrowRight className="w-5 h-5" />
             </a>
