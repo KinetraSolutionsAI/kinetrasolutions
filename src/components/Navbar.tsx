@@ -49,41 +49,7 @@ const Navbar = () => {
           Contattaci
         </a>
 
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="menu"
-        >
-          {open ? <X /> : <Menu />}
-        </button>
       </nav>
-
-      {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
-          <ul className="container mx-auto py-6 flex flex-col gap-5">
-            {links.map((l) => (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="text-muted-foreground"
-                >
-                  {l.label}
-                </a>
-              </li>
-            ))}
-            <li>
-              <a
-                href="#contatti"
-                onClick={() => setOpen(false)}
-                className="btn-primary !py-2.5 !px-5 w-fit"
-              >
-                Contattaci
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
     </header>
   );
 };
