@@ -1,70 +1,8 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, MessageCircle, CheckCircle2, Loader2 } from "lucide-react";
-import { toast } from "sonner";
+import { Send, MessageCircle } from "lucide-react";
+import { ContactForm } from "./ContactForm";
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setSubmitted(true);
-        toast.success("Messaggio inviato con successo!");
-      } else {
-        throw new Error("Errore nell'invio");
-      }
-    } catch (error) {
-      toast.error("Si è verificato un errore. Riprova più tardi.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  if (submitted) {
-    return (
-      <section id="contatti" className="py-24 md:py-32 relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="max-w-2xl mx-auto glass-card p-12 text-center"
-          >
-            <CheckCircle2 className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl font-bold mb-4">Grazie per averci contattato!</h2>
-            <p className="text-foreground/70 text-lg mb-8">
-              Il tuo messaggio è stato ricevuto. Ti risponderemo entro le prossime 24 ore.
-            </p>
-            <button 
-              onClick={() => setSubmitted(false)}
-              className="btn-ghost text-sm"
-            >
-              Invia un altro messaggio
-            </button>
-          </motion.div>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section id="contatti" className="py-16 md:py-32 relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -131,74 +69,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="glass-card p-8 md:p-10 relative"
             >
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid md:grid-cols-2 gap-5">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium ml-1">Nome e Cognome</label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      placeholder="Mario Rossi"
-                      className="w-full px-4 py-3 rounded-xl bg-background border border-border/50 focus:border-primary/50 focus:ring-4 focus:ring-primary/5 outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium ml-1">Email Aziendale</label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="mario@azienda.it"
-                      className="w-full px-4 py-3 rounded-xl bg-background border border-border/50 focus:border-primary/50 focus:ring-4 focus:ring-primary/5 outline-none transition-all"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium ml-1">Telefono (opzionale)</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="+39 012 345 6789"
-                    className="w-full px-4 py-3 rounded-xl bg-background border border-border/50 focus:border-primary/50 focus:ring-4 focus:ring-primary/5 outline-none transition-all"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium ml-1">Come possiamo aiutarti?</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={4}
-                    placeholder="Descrivi brevemente la tua esigenza..."
-                    className="w-full px-4 py-3 rounded-xl bg-background border border-border/50 focus:border-primary/50 focus:ring-4 focus:ring-primary/5 outline-none transition-all resize-none"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full btn-primary !py-4 text-lg font-bold flex items-center justify-center gap-2 group disabled:opacity-70"
-                >
-                  {isSubmitting ? (
-                    <Loader2 className="w-6 h-6 animate-spin" />
-                  ) : (
-                    <>
-                      Invia Richiesta
-                      <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </>
-                  )}
-                </button>
-                
-                <p className="text-[11px] text-center text-foreground/40 mt-4">
-                  Cliccando su invia accetti il trattamento dei dati secondo la normativa vigente.
-                </p>
-              </form>
+              <ContactForm />
             </motion.div>
           </div>
         </div>
