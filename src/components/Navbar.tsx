@@ -1,6 +1,6 @@
-import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo-dark.png";
+import logoDark from "@/assets/logo-dark.png";
+import logoLight from "@/assets/logo-light.png";
 
 const links = [
   { href: "#chi-siamo", label: "Chi Siamo" },
@@ -24,12 +24,12 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/70 backdrop-blur-xl border-b border-border/60" : "bg-transparent"
+        scrolled ? "bg-zinc-900/95 backdrop-blur-xl shadow-lg border-b border-white/5" : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between py-4">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logo} alt="Kinetra Solutions" className="h-10 md:h-12 w-auto" />
+          <img src={scrolled ? logoLight : logoDark} alt="Kinetra Solutions" className="h-10 md:h-12 w-auto transition-opacity duration-300" />
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -37,7 +37,11 @@ const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className={`text-sm transition-colors ${
+                  scrolled 
+                    ? "text-zinc-300 hover:text-white" 
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
               >
                 {l.label}
               </a>
