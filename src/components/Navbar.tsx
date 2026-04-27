@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import logoDark from "@/assets/logo-dark.png";
+import logoDark from "@/assets/logo dark.png";
 import logoLight from "@/assets/logo-light.png";
 
 const links = [
-  { href: "#chi-siamo", label: "Chi Siamo" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#processo", label: "Processo" },
-  { href: "#tecnologie", label: "Tecnologie" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#chi-siamo", label: "Chi Siamo" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/#processo", label: "Processo" },
+  { href: "/#tecnologie", label: "Tecnologie" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const Navbar = () => {
@@ -28,8 +28,8 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <img src={scrolled ? logoLight : logoDark} alt="Kinetra Solutions" className="h-10 md:h-12 w-auto transition-opacity duration-300" />
+        <a href="/#top" className="flex items-center gap-2">
+          <img src={scrolled ? logoDark : logoLight} alt="Kinetra Solutions" className="h-10 md:h-12 w-auto transition-opacity duration-300" />
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -49,7 +49,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <a href="#contatti" className="hidden md:inline-flex btn-primary !py-2.5 !px-5">
+        <a href="/#contatti" className="hidden md:inline-flex btn-primary !py-2.5 !px-5">
           Contattaci
         </a>
 

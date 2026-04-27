@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import logo from "@/assets/logo-dark.png";
+import logo from "@/assets/logo-light.png";
 
 const Footer = () => {
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Link rapidi</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li><a href="#chi-siamo" className="hover:text-foreground transition-colors">Chi Siamo</a></li>
-              <li><a href="#servizi" className="hover:text-foreground transition-colors">Servizi</a></li>
-              <li><a href="#processo" className="hover:text-foreground transition-colors">Processo</a></li>
-              <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="/#chi-siamo" className="hover:text-foreground transition-colors">Chi Siamo</a></li>
+              <li><a href="/#servizi" className="hover:text-foreground transition-colors">Servizi</a></li>
+              <li><a href="/#processo" className="hover:text-foreground transition-colors">Processo</a></li>
+              <li><a href="/#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -42,8 +42,8 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Kinetra Solutions. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Cookie Policy</a>
+            <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="/cookie-policy" className="hover:text-foreground transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
