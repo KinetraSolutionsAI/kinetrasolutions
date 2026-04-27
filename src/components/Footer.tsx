@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import logo from "@/assets/logo-light.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -42,8 +43,8 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Kinetra Solutions. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="/cookie-policy" className="hover:text-foreground transition-colors">Cookie Policy</a>
+            <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/cookie-policy" className="hover:text-foreground transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

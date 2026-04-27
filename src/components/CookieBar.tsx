@@ -33,10 +33,8 @@ const CookieBar = () => {
           <div className="flex-1 space-y-3">
             <h3 className="text-xl font-semibold text-white">Utilizziamo i cookie</h3>
             <p className="text-sm text-zinc-300 leading-relaxed max-w-2xl">
-              Il nostro sito utilizza cookie tecnici e di profilazione (incluso Meta Pixel) per personalizzare i contenuti, 
-              offrire funzionalità orientate ai social media e per analizzare il nostro traffico. 
-              Cliccando su "Accetta tutto", acconsenti all'uso di tutti i cookie. 
-              Puoi leggere di più nella nostra{" "}
+              Utilizziamo cookie tecnici essenziali e cookie di profilazione (incluso Meta Pixel) per migliorare la tua navigazione e offrirti contenuti personalizzati. 
+              Scopri di più nella nostra{" "}
               <Link to="/cookie-policy" className="text-primary hover:text-primary-hover underline underline-offset-4 transition-colors">
                 Cookie Policy
               </Link>.
@@ -46,7 +44,7 @@ const CookieBar = () => {
             <Button 
               variant="outline" 
               onClick={declineCookies}
-              className="w-full sm:w-auto border-white/20 hover:bg-white/10 hover:text-white"
+              className="w-full sm:w-auto bg-white text-zinc-900 hover:bg-zinc-200 border-0"
             >
               Rifiuta
             </Button>
