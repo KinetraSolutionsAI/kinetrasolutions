@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    q: "Quanto tempo richiede un progetto tipico?",
-    a: "Da 2 settimane per un POC a 3 mesi per una piattaforma completa. Lavoriamo con sprint agili per consegnarti valore incrementale.",
+    q: "Quanto tempo ci vuole per completare un progetto?",
+    a: "Da 7 giorni a 1 mese in base al carico di lavoro. Riusciamo a completare rapidamente ogni progetto grazie a un team dedicato che lavora H24 per te.",
   },
   {
-    q: "Supportate anche la fase post-lancio?",
-    a: "Assolutamente. Offriamo contratti di manutenzione, monitoring e supporto tecnico 24/7.",
+    q: "Ci assistete anche dopo aver consegnato il lavoro?",
+    a: "Certamente. Restiamo al tuo fianco offrendo manutenzione e supporto tecnico continuo per garantire che tutto funzioni sempre al meglio.",
   },
   {
-    q: "Lavorate con aziende della nostra industry?",
-    a: "Siamo industry-agnostic. Abbiamo esperienza in retail, manifattura, servizi professionali, healthcare e fintech.",
+    q: "Lavorate anche nel nostro settore specifico?",
+    a: "Sì, le nostre soluzioni sono flessibili e si adattano a qualsiasi tipologia di azienda. Che tu abbia un negozio o una grande impresa, sappiamo come aiutarti.",
   },
   {
-    q: "Possiamo integrare con i nostri sistemi esistenti?",
-    a: "Sì. Siamo specializzati in integrazioni API e modernizzazione di sistemi legacy senza disruption operativa.",
+    q: "Potete collegare i nuovi software ai programmi che usiamo già in azienda?",
+    a: "Assolutamente sì. Facciamo in modo che le nuove tecnologie si aggancino ai tuoi sistemi attuali per modernizzarli, senza causare interruzioni al vostro lavoro.",
   },
   {
-    q: "Offrite formazione ai nostri team interni?",
-    a: "Ogni progetto include training hands-on e documentazione completa per garantire autonomia.",
+    q: "Insegnerete ai nostri dipendenti come usare i nuovi sistemi?",
+    a: "Sì, alla consegna vi spiegheremo passo dopo passo come utilizzare tutto, affinché il tuo team sia subito autonomo e operativo.",
   },
   {
-    q: "Cosa serve per iniziare?",
-    a: "Una call di 30 minuti. Nessun commitment, solo una chiacchierata per capire se possiamo aiutarti.",
+    q: "Cosa devo fare per iniziare?",
+    a: "Basta contattarci per una semplice chiacchierata gratuita. Senza alcun impegno, capiremo le tue esigenze e ti diremo cosa possiamo fare per te.",
   },
 ];
 
