@@ -33,10 +33,11 @@ export const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
           setTimeout(() => onSuccess(), 2000);
         }
       } else {
-        throw new Error("Errore nell'invio");
+        const errorData = await response.json();
+        throw new Error(errorData.error ? JSON.stringify(errorData.error) : "Errore nell'invio dal server");
       }
-    } catch (error) {
-      toast.error("Si è verificato un errore. Riprova più tardi.");
+    } catch (error: any) {
+      toast.error(`Si è verificato un errore: ${error.message || "Riprova più tardi."}`);
     } finally {
       setIsSubmitting(false);
     }
